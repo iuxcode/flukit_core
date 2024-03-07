@@ -1,7 +1,11 @@
 library flukit_core;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+class Flu {
+  static final Flu _instance = Flu._internal();
+
+  factory Flu() {
+    return _instance;
+  }
+
+  Flu._internal();
 }
