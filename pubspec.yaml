@@ -1,10 +1,11 @@
 name: flukit_core
-description: "A new Flutter package project."
+description: "Foundational package of the Flukit framework, offering core functionalities and abstractions."
 version: 0.0.1
-homepage:
+homepage: https://github.com/iuxcode/flukit_core.git
+publish_to: none
 
 environment:
-  sdk: '>=3.3.0 <4.0.0'
+  sdk: ">=3.3.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
