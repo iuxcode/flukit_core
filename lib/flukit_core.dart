@@ -2,7 +2,7 @@ library flukit_core;
 
 import 'package:flukit_core/src/data/static/countries.dart';
 
-export 'package:flukit_core/src/data/static/countries.dart' show Country;
+export 'package:flukit_core/src/data/static/countries.dart';
 
 class Flu {
   static final Flu _instance = Flu._internal();
