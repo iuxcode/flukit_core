@@ -4,15 +4,18 @@ import 'package:flukit_core/src/data/static/countries.dart';
 
 export 'package:flukit_core/src/data/static/countries.dart';
 
-class Flu {
-  static final Flu _instance = Flu._internal();
+class Flukit {
+  static final Flukit _instance = Flukit._internal();
 
-  factory Flu() {
+  factory Flukit() {
     return _instance;
   }
 
-  Flu._internal();
+  Flukit._internal();
 
   /// list of the countries of the world with their information: `name`, `isoCode`, `iso3Code` and the `phoneCode`
   List<Country> get countries => Country.all;
 }
+
+// ignore: non_constant_identifier_names
+final Flukit Flu = Flukit();
