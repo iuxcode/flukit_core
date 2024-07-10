@@ -10,11 +10,11 @@ class Country {
   });
 
   /// Create [Country] instance from json.
-  factory Country.fromJson(Map<String, String> map) => Country(
-        name: map['name']!,
-        isoCode: map['isoCode']!,
-        iso3Code: map['iso3Code']!,
-        phoneCode: map['phoneCode']!,
+  factory Country.fromJson(Map<String, dynamic> map) => Country(
+        name: map['name'] as String,
+        isoCode: map['isoCode'] as String,
+        iso3Code: map['iso3Code'] as String,
+        phoneCode: map['phoneCode'] as String,
       );
 
   /// [Country] to json
