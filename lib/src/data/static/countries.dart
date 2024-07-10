@@ -17,6 +17,14 @@ class Country {
         phoneCode: map['phoneCode']!,
       );
 
+  /// [Country] to json
+  Map<String, String> toJson() => {
+        'name': name,
+        'isoCode': isoCode,
+        'iso3Code': iso3Code,
+        'phoneCode': phoneCode,
+      };
+
   /// Iso3 country representation
   /// Eg: `TGO` for `Togo`
   final String iso3Code;
