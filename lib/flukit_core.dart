@@ -5,16 +5,9 @@ import 'package:flukit_core/src/data/static/countries.dart';
 export 'package:flukit_core/src/data/static/countries.dart';
 
 /// Share core utilities & functions across all packages of the flukit framework
-class Flukit {
-  /// Flukit constructor
-  factory Flukit() {
-    return _instance;
-  }
+abstract class Flukit {}
 
-  Flukit._internal();
-
-  static final Flukit _instance = Flukit._internal();
-
+class _FluImpl implements Flukit {
   /// list of the countries of the world with
   /// their information: `name`, `isoCode`, `iso3Code` and the `phoneCode`
   List<Country> get countries => Country.all;
@@ -22,4 +15,4 @@ class Flukit {
 
 /// Singleton instance for Flukit
 // ignore: non_constant_identifier_names
-final Flukit Flu = Flukit();
+final Flukit Flu = _FluImpl();
